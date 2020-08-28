@@ -4,7 +4,7 @@ Sub Word2DV()
 ' Copyright � 2016
 ' Created by Mark Battistella
 '
-	
+
 	' Show the messages about this macro
 	alert = "This will convert your current document into a DV Widescreen (1024x576) format"
 	alert = alert & vbCrLf & " "
@@ -76,7 +76,7 @@ Sub Word2DV()
 			noSave = MsgBox("You need to save the document before it can export to PDF", vbCritical + vbOKOnly, "Document it not saved")
 
 		Else
-	
+
 			' Set the location and strip extension from original file for PDF export
 			originalPath = ActiveDocument.FullName
 			filenamePath = Left(originalPath, InStrRev(originalPath, ".") - 1)
@@ -88,10 +88,10 @@ Sub Word2DV()
 				Item:=wdExportDocumentContent, IncludeDocProps:=True, KeepIRM:=True, _
 				CreateBookmarks:=wdExportCreateNoBookmarks, DocStructureTags:=True, _
 				BitmapMissingFonts:=True, UseISO19005_1:=False
-			
+
 			' Close the current document after export
 			ActiveDocument.Close SaveChanges:=wdDoNotSaveChanges
-		
+
 		End If
 
 	Else

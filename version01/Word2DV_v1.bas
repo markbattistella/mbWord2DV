@@ -1,7 +1,8 @@
+Attribute VB_Name = "NewMacros"
 Sub Word2DV()
 '
 ' Word2DV Macro
-' Copyright © 2016
+' Copyright ï¿½ 2016
 ' Created by Mark Battistella
 '
 
@@ -24,7 +25,7 @@ Sub Word2DV()
     questionPress = MsgBox(alertMsg, vbQuestion + vbYesNo, "Convert document to DV widescreen   ;)")
 
     If questionPress = vbYes Then
-    
+
         fontPrompt = "What font size should the text be?"
         fontTitle = "Set the font size"
         fontDefault = "20"
@@ -68,7 +69,7 @@ Sub Word2DV()
                     .MirrorIndents = False
                     .TextboxTightWrap = wdTightNone
                 End With
-                
+
     ActiveDocument.ExportAsFixedFormat OutputFileName:= _
         Replace(ActiveDocument.FullName, ".docx", ".pdf"), _
         ExportFormat:=wdExportFormatPDF, OpenAfterExport:=False, OptimizeFor:= _
@@ -83,5 +84,3 @@ Sub Word2DV()
 
     End If
 End Sub
-
-
