@@ -1,0 +1,1 @@
+Copy Normal.dotm to %appdata%\Microsoft\Templates
