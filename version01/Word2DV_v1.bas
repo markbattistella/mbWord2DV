@@ -1,10 +1,11 @@
+' Word2DV Macro
+' Copyright (c) 2016
+' Created by Mark Battistella
+' Do not alter anything or else the world will break
+
+
 Attribute VB_Name = "NewMacros"
 Sub Word2DV()
-'
-' Word2DV Macro
-' Copyright � 2016
-' Created by Mark Battistella
-'
 
     ' Show the messages about this macro
     alert = "This will convert your current document into a DV Widescreen (1024x576) format"
